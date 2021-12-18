@@ -1,0 +1,23 @@
+@font-face {
+    font-family : '나눔스퀘어';
+    src: url("../font/NanumSquareL.ttf") format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family : '나눔스퀘어';
+    src: url("../font/NanumSquareR.ttf") format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family : '나눔스퀘어';
+    src: url("../font/NanumSquareB.ttf") format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family : '나눔스퀘어';
+    src: url("../font/NanumSquareEB.ttf") format('truetype');
+    font-weight: 900;
+}
