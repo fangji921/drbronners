@@ -21,3 +21,9 @@
     src: url("../font/NanumSquareEB.ttf") format('truetype');
     font-weight: 900;
 }
+
+@font-face {
+    font-family : 'Franklin Gothic Book';
+    src: url("../font/NanumSquareEB.ttf") format('truetype');
+    font-weight: 500;
+}

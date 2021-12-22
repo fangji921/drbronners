@@ -20,7 +20,7 @@ $(document).ready(function () {
 
             } else if (scrTop >= $(".sec_02").offset().top + $(".sec_02 .textbox").height() / 2 && scrTop < $(".sec_02").offset().top + winHeight / 2) {
 
-                $(".sec_02 .soup_pic").addClass("fade");
+                $(".sec_02 .soup-pic").addClass("fade");
 
             } else if(scrTop >= $(".sec_02").offset().top + winHeight/2 && scrTop<$(".sec_03").offset().top){
                       
@@ -29,7 +29,7 @@ $(document).ready(function () {
             }else if (scrTop <= $(".sec_01").offset().top) {
 
                 $(".sec_02 .textbox").removeClass("fade");
-                $(".sec_02 .soup_pic").removeClass("fade");
+                $(".sec_02 .soup-pic").removeClass("fade");
                 $(".sec_02 .ingredient").removeClass("fade");
             }
 
@@ -40,12 +40,12 @@ $(document).ready(function () {
 
             } else if (scrTop >=$(".sec_03").offset().top-winHeight / 4  && scrTop<$(".sec_03").offset().top) {
 
-                $(".sec_03 .color_box").addClass("swipe");
-                $(".sec_03 .img_box").addClass("swipe");
+                $(".sec_03 .color-box").addClass("swipe");
+                $(".sec_03 .img-box").addClass("swipe");
                 $(".sec_03 .textbox").children().addClass("fade");
                 
             }else if(scrTop<$(".sec_03").offset().top-winHeight){
-                $(".sec_03").removeClass("swipe").find("color_box img_box").removeClass("swipe");
+                $(".sec_03").removeClass("swipe").find("color-box img-box").removeClass("swipe");
                 $(".sec_03 .text_box").children().removeClass("fade");
             }
         
@@ -65,18 +65,18 @@ $(document).ready(function () {
         if(scrTop>=$(".sec_06").offset().top-winHeight/2 && scrTop<$("footer").offset().top){
             
             $(".sec_06 h2").addClass("fade");
-            $(".sec_06 .insta_feed").addClass("fade");
+            $(".sec_06 .insta-feed").addClass("fade");
         
         }else if(scrTop<$(".sec_05").offset().top){
         
             $(".sec_06 h2").removeClass("fade");
-            $(".sec_06 .insta_feed").removeClass("fade");
+            $(".sec_06 .insta-feed").removeClass("fade");
             
         }
         
         })
 
-    $('.in_section').slick({
+    $('.sec_01 .sec-inner').slick({
         dots: true,
         fade: true,
         cssEase: 'linear',
@@ -84,7 +84,7 @@ $(document).ready(function () {
         autoplaySpeed: 4000,
     });
 
-    $('.mini_banner_box').slick({
+    $('.sec_05 .mini-banner-box').slick({
         dots: true,
         speed: 1000,
         slidesToShow: 1,
