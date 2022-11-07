@@ -14,82 +14,82 @@ $(document).ready(function () {
         }
 
             /*스크롤시 섹션2 컨텐츠별 이벤트*/
-            if (scrTop >= $(".sec_02").offset().top - winHeight/3 && scrTop < $(".sec_02").offset().top + $(".sec_02 .textbox").height() / 2) {
+            if (scrTop >= $(".sec-02").offset().top - winHeight/3 && scrTop < $(".sec-02").offset().top + $(".sec-02 .text-box").height() / 2) {
                 
-                $(".sec_02 .textbox").addClass("fade");
+                $(".sec-02 .text-box").addClass("fade");
 
-            } else if (scrTop >= $(".sec_02").offset().top + $(".sec_02 .textbox").height() / 2 && scrTop < $(".sec_02").offset().top + winHeight / 2) {
+            } else if (scrTop >= $(".sec-02").offset().top + $(".sec-02 .text-box").height() / 3 && scrTop < $(".sec-02").offset().top + winHeight / 2) {
 
-                $(".sec_02 .soup-pic").addClass("fade");
+                $(".sec-02 .large-img").addClass("fade");
 
-            } else if(scrTop >= $(".sec_02").offset().top + winHeight/2 && scrTop<$(".sec_03").offset().top){
+            } else if(scrTop >= $(".sec-02").offset().top + winHeight/2 && scrTop<$(".sec-03").offset().top){
                       
-                $(".sec_02 .ingredient").addClass("fade");
+                $(".sec-02 .cont").addClass("fade");
                 
-            }else if (scrTop <= $(".sec_01").offset().top) {
+            }else if (scrTop <= $(".sec-01").offset().top) {
 
-                $(".sec_02 .textbox").removeClass("fade");
-                $(".sec_02 .soup-pic").removeClass("fade");
-                $(".sec_02 .ingredient").removeClass("fade");
+                $(".sec-02 .text-box").removeClass("fade");
+                $(".sec-02 .large-img").removeClass("fade");
+                $(".sec-02 .cont").removeClass("fade");
             }
 
             /*스크롤시 섹션3 컨텐츠별 이벤트*/
-            if (scrTop >= $(".sec_03").offset().top - winHeight / 2 && scrTop < $(".sec_03").offset().top -winHeight / 4 ) {
+            if (scrTop >= $(".sec-03").offset().top - winHeight / 2 && scrTop < $(".sec-03").offset().top -winHeight / 4 ) {
 
-                $(".sec_03").addClass("swipe");
+                $(".sec-03").addClass("swipe");
 
-            } else if (scrTop >=$(".sec_03").offset().top-winHeight / 4  && scrTop<$(".sec_03").offset().top) {
+            } else if (scrTop >=$(".sec-03").offset().top-winHeight / 4  && scrTop<$(".sec-03").offset().top) {
 
-                $(".sec_03 .color-box").addClass("swipe");
-                $(".sec_03 .img-box").addClass("swipe");
-                $(".sec_03 .textbox").children().addClass("fade");
+                $(".sec-03 .color-box").addClass("swipe");
+                $(".sec-03 .img-box").addClass("swipe");
+                $(".sec-03 .textbox").children().addClass("fade");
                 
-            }else if(scrTop<$(".sec_03").offset().top-winHeight){
-                $(".sec_03").removeClass("swipe").find("color-box img-box").removeClass("swipe");
-                $(".sec_03 .text_box").children().removeClass("fade");
+            }else if(scrTop<$(".sec-03").offset().top-winHeight){
+                $(".sec-03").removeClass("swipe").find("color-box img-box").removeClass("swipe");
+                $(".sec-03 .text_box").children().removeClass("fade");
             }
         
             /*스크롤시 섹션4 컨텐츠별 이벤트*/
-        if(scrTop>=$(".sec_04").offset().top-winHeight/2 && scrTop<$(".sec_05").offset().top){
+        if(scrTop>=$(".sec-04").offset().top-winHeight/2 && scrTop<$(".sec-05").offset().top){
             
-            $(".sec_04 .textbox").children().addClass("fade");
-            $(".sec_04 .product").addClass("fade");
+            $(".sec-04 .textbox").children().addClass("fade");
+            $(".sec-04 .product").addClass("fade");
             
             
-        }else if(scrTop<$(".sec_04").offset().top-winHeight){
+        }else if(scrTop<$(".sec-04").offset().top-winHeight){
             
-            $(".sec_04 .textbox").children().removeClass("fade");
-            $(".sec_04 .product").removeClass("fade");
+            $(".sec-04 .textbox").children().removeClass("fade");
+            $(".sec-04 .product").removeClass("fade");
         }
         
-        if(scrTop>=$(".sec_06").offset().top-winHeight/2 && scrTop<$("footer").offset().top){
+        if(scrTop>=$(".sec-06").offset().top-winHeight/2 && scrTop<$("footer").offset().top){
             
-            $(".sec_06 h2").addClass("fade");
-            $(".sec_06 .insta-feed").addClass("fade");
+            $(".sec-06 h2").addClass("fade");
+            $(".sec-06 .insta-feed").addClass("fade");
         
-        }else if(scrTop<$(".sec_05").offset().top){
+        }else if(scrTop<$(".sec-05").offset().top){
         
-            $(".sec_06 h2").removeClass("fade");
-            $(".sec_06 .insta-feed").removeClass("fade");
+            $(".sec-06 h2").removeClass("fade");
+            $(".sec-06 .insta-feed").removeClass("fade");
             
         }
         
         })
 
-    $('.sec_01 .sec-inner').slick({
+    $('.sec-01 .main-bg .inner').slick({
         dots: true,
         fade: true,
         cssEase: 'linear',
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 5000,
     });
 
-    $('.sec_05 .mini-banner-box').slick({
+    $('.sec-05 .mini-banner-box').slick({
         dots: true,
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
     });
 })

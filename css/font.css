@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family : 'Franklin Gothic Book';
-    src: url("../font/NanumSquareEB.ttf") format('truetype');
+    font-family : 'Franklin Gothic Medium Cond';
+    src: url("../font/FRAMDCN.TTF") format('truetype');
     font-weight: 500;
 }
